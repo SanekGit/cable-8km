@@ -17,6 +17,6 @@ Configure environment:
 
 Run:
 
-1. Run the configured label/link. http://127.0.0.1:8888/tree page will be opened.
+1. Run the configured shortcut. http://127.0.0.1:8888/tree page will be opened.
 2. Click on **qam-m.ipynb** to open document.
 3. To run code snippets - select appropriate cell and **ctrl+enter**

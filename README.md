@@ -3,7 +3,7 @@ cable-8km
 
 Configure environment:
 
-1. Install https://store.continuum.io/cshop/anaconda/
+1. Install https://store.continuum.io/cshop/anaconda/ *Dont forget to use *
 2. Using console configure **IPython** http://ipython.org/install.html
 3. Install **Git** http://git-scm.com/downloads
 4. Create **cable-8km** folder inside projects folder
@@ -12,8 +12,8 @@ Configure environment:
   7. git init
   8. git remote add origin https://github.com/redneckz/cable-8km
   9. git pull origin master
-10. Configure label/link to **IPython Notebook**
-11. Change **Work Folder** / **Start In** attribute to **cable-8km** folder path
+10. Copy **IPython Notebook** shortcut from **Anaconda** start menu.
+11. Change **Work Folder**/**Start In** attribute of the copied shortcut to **cable-8km** folder path
 
 Run:
 

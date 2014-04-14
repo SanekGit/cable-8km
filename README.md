@@ -3,7 +3,7 @@ cable-8km
 
 Configure environment:
 
-1. Install https://store.continuum.io/cshop/anaconda/ *Dont forget to use *
+1. Install https://store.continuum.io/cshop/anaconda/ *Use english letters only inside installation path*
 2. Using console configure **IPython** http://ipython.org/install.html
 3. Install **Git** http://git-scm.com/downloads
 4. Create **cable-8km** folder inside projects folder

@@ -7,7 +7,7 @@ Configure environment:
 2. Using console configure **IPython** http://ipython.org/install.html
 3. Install **Git** http://git-scm.com/downloads
 4. Create **cable-8km** folder inside projects folder
-5. Open **Git Schell** on created folder
+5. Open **Git Bash** on created folder using context menu
 6. Enter following commands:
   7. git init
   8. git remote add origin https://github.com/redneckz/cable-8km

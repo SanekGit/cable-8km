@@ -3,15 +3,17 @@
 
 ## Зависимости
 
-# In[1]:
+# In[7]:
 
 import math
 import numpy
+get_ipython().magic(u'matplotlib inline')
+import matplotlib.pyplot as pyplot
 
 
 ## Общие функции
 
-# In[26]:
+# In[8]:
 
 def avg(array):
     return sum(array)/float(len(array))
@@ -64,4 +66,17 @@ def compute_signal_afc(signal, sampling_freq):
     afc = 2*abs(numpy.fft.fft(signal)[0:len(t)//2])/len(t)
     freq = numpy.fft.fftfreq(len(t))[0:len(t)//2]*sampling_freq
     return (freq, afc)
+
+
+# In[9]:
+
+"""
+Центрует точку отсчёта при построении графиков
+"""
+def center_plot_axis(center=(0, 0)):
+    gca = pyplot.gca()
+    gca.spines["left"].set_position(("data", center[0]))
+    gca.spines["bottom"].set_position(("data", center[1]))
+    gca.spines["right"].set_position(("data", center[0]))
+    gca.spines["top"].set_position(("data", center[1]))
 

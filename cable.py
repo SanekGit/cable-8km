@@ -15,23 +15,25 @@ import numpy
 
 ## Параметры
 
-# In[2]:
+# In[4]:
 
 # Длина кабеля
 LEN = 5*1000
 
 print "Длина кабеля = {0}км".format(LEN/1000)
 
-# Удельное затухание
-ATTm = 0.001
-# Затухание
+# Удельное затухание Дб/м
+ATTm = 0.005
+# Затухание Дб
 ATT = LEN*ATTm
+# Отношение Ain/Aout
+K = 10**(ATT/10)
 
 print "Удельное затухание = {0}Дб/м".format(ATTm)
 print "Затухание = {0}Дб".format(ATT)
 
 # Амплитуда шума
-NOISE_A = 0.01
+NOISE_A = 0.1
 
 print "Амплитуда шума = {0}".format(NOISE_A)
 
@@ -44,9 +46,8 @@ print "Амплитуда шума = {0}".format(NOISE_A)
 @signal - сигнал
 return - (список частот, список амплитуд)
 """
-def cable(signal):
-    k = 10**(ATT/10)
-    return (1.0/k)*(signal + noise(len(signal)))
+def cable(signal, noise_amp=NOISE_A):
+    return (1.0/K)*(signal + noise(len(signal), noise_amp))
 
 """
 Белый шум
